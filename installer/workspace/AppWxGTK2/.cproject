@@ -38,7 +38,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="" artifactName="${ARTIFACT_NAME}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="${cross_rm} -rf" description="" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617" name="Linux_x86-64_release" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
+				<configuration artifactExtension="" artifactName="${ARTIFACT_NAME}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="${cross_rm} -rf" description="" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617" name="Linux_x86-64_release" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
 					<folderInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617." name="/" resourcePath="">
 						<toolChain errorParsers="" id="cdt.managedbuild.toolchain.gnu.base.1250152170" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.759484862" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
@@ -118,7 +118,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="" artifactName="${ARTIFACT_NAME}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="${cross_rm} -rf" description="" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617.548192647" name="RaspberryPi2_release" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
+				<configuration artifactExtension="" artifactName="${ARTIFACT_NAME}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="${cross_rm} -rf" description="" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617.548192647" name="RaspberryPi2_release" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
 					<folderInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617.548192647." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.cross.base.699755896" name="Cross GCC" superClass="cdt.managedbuild.toolchain.gnu.cross.base">
 							<option id="cdt.managedbuild.option.gnu.cross.prefix.1640173164" name="Prefix" superClass="cdt.managedbuild.option.gnu.cross.prefix" value="arm-linux-" valueType="string"/>
@@ -202,7 +202,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="" artifactName="${ARTIFACT_NAME}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="${cross_rm} -rf" description="" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617.1995993909" name="Linux_x86-64_debug" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
+				<configuration artifactExtension="" artifactName="${ARTIFACT_NAME}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="${cross_rm} -rf" description="" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617.1995993909" name="Linux_x86-64_debug" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
 					<folderInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617.1995993909." name="/" resourcePath="">
 						<toolChain errorParsers="" id="cdt.managedbuild.toolchain.gnu.base.299258369" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.623156473" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
@@ -244,52 +244,140 @@
 			</storageModule>
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
 		</cconfiguration>
+		<cconfiguration id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617.548192647.1647657032">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617.548192647.1647657032" moduleId="org.eclipse.cdt.core.settings" name="RaspberryPi2_debug">
+				<macros>
+					<stringMacro name="BOARD" type="VALUE_TEXT" value="raspberrypi2"/>
+					<stringMacro name="LINKMODE" type="VALUE_TEXT" value="static"/>
+					<stringMacro name="CPPFLAGS" type="VALUE_TEXT" value="`${WXCONFIG} --cppflags`"/>
+					<stringMacro name="ARCH" type="VALUE_TEXT" value="arm7"/>
+					<stringMacro name="ABI" type="VALUE_TEXT" value="arm-buildroot-linux-gnueabihf"/>
+					<stringMacro name="WORKSPACEDIR" type="VALUE_PATH_DIR" value="${DVELTOOLDIR}/workspace"/>
+					<stringMacro name="PCHDIR" type="VALUE_PATH_DIR" value="pch"/>
+					<stringMacro name="LDFLAGS" type="VALUE_TEXT" value="-static-libgcc -static-libstdc++"/>
+					<stringMacro name="DVELTOOLDIR" type="VALUE_PATH_ANY" value="/opt/dveltool"/>
+					<stringMacro name="SYSROOT" type="VALUE_PATH_ANY" value="${TOOLCHAINDIR}/host/usr/${ABI}/sysroot"/>
+					<stringMacro name="LINKEROPT" type="VALUE_TEXT" value="`${WXCONFIG} --libs`"/>
+					<stringMacro name="GUI" type="VALUE_TEXT" value="gtk2"/>
+					<stringMacro name="ARTIFACT_NAME" type="VALUE_TEXT" value="${ProjName}"/>
+					<stringMacro name="RELEASEMODE" type="VALUE_TEXT" value="debug"/>
+					<stringMacro name="LIBC" type="VALUE_TEXT" value="glibc"/>
+					<stringMacro name="WXCONFIG" type="VALUE_PATH_FILE" value="${WXDIR}/bin/wx-config"/>
+					<stringMacro name="WXDIR" type="VALUE_PATH_DIR" value="${SYSROOT}/usr/local/wx3ud_static"/>
+					<stringMacro name="CXXFLAGS" type="VALUE_TEXT" value="`${WXCONFIG} --cxxflags`"/>
+					<stringMacro name="TOOLCHAINDIR" type="VALUE_PATH_ANY" value="${DVELTOOLDIR}/toolchain/${BOARD}"/>
+				</macros>
+				<externalSettings>
+					<externalSetting>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="includePath" name="/AppWx"/>
+					</externalSetting>
+				</externalSettings>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="" artifactName="${ARTIFACT_NAME}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="${cross_rm} -rf" description="" errorParsers="org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser" id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617.548192647.1647657032" name="RaspberryPi2_debug" parent="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617" postannouncebuildStep="" postbuildStep="" preannouncebuildStep="" prebuildStep="">
+					<folderInfo id="ilg.gnuarmeclipse.managedbuild.cross.config.elf.release.124326276.942120463.1317488220.1617492570.716863617.548192647.1647657032." name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.cross.base.60957885" name="Cross GCC" superClass="cdt.managedbuild.toolchain.gnu.cross.base">
+							<option id="cdt.managedbuild.option.gnu.cross.prefix.618479102" name="Prefix" superClass="cdt.managedbuild.option.gnu.cross.prefix" value="arm-linux-" valueType="string"/>
+							<option id="cdt.managedbuild.option.gnu.cross.path.403612381" name="Path" superClass="cdt.managedbuild.option.gnu.cross.path" value="/opt/dveltool/toolchain/raspberrypi2/host/usr/bin" valueType="string"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.1245477026" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
+							<builder buildPath="${workspace_loc:/AppWxGTK2}/RaspberryPi2_release" id="cdt.managedbuild.builder.gnu.cross.1775387789" keepEnvironmentInBuildfile="false" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="cdt.managedbuild.builder.gnu.cross"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.c.compiler.74249297" name="Cross GCC Compiler" superClass="cdt.managedbuild.tool.gnu.cross.c.compiler">
+								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.option.optimization.level.1426628293" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1326093432" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1612348136" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS} ${CXXFLAGS} ${CXXFLAGS}" id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.358542347" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler">
+								<option id="gnu.cpp.compiler.option.include.paths.81202459" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WXDIR}/lib/wx/include/gtk2-unicode-static-3.0&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${WXDIR}/include/wx-3.0&quot;"/>
+								</option>
+								<option id="gnu.cpp.compiler.option.optimization.level.1921668780" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.178894431" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.default" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.nostdinc.1706640834" name="Do not search system directories (-nostdinc)" superClass="gnu.cpp.compiler.option.preprocessor.nostdinc" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.preprocess.1082524755" name="Preprocess only (-E)" superClass="gnu.cpp.compiler.option.preprocessor.preprocess" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.warnings.allwarn.684629357" name="All warnings (-Wall)" superClass="gnu.cpp.compiler.option.warnings.allwarn" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option id="gnu.cpp.compiler.option.dialect.std.705499454" name="Language standard" superClass="gnu.cpp.compiler.option.dialect.std" useByScannerDiscovery="true" value="gnu.cpp.compiler.dialect.default" valueType="enumerated"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.2123169418" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.337797411" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker"/>
+							<tool commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS} ${LINKEROPT} ${LDFLAGS}" id="cdt.managedbuild.tool.gnu.cross.cpp.linker.202674306" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker">
+								<option id="gnu.cpp.link.option.strip.164544449" name="Omit all symbol information (-s)" superClass="gnu.cpp.link.option.strip" value="false" valueType="boolean"/>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.471376514" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.cross.archiver.670528935" name="Cross GCC Archiver" superClass="cdt.managedbuild.tool.gnu.cross.archiver"/>
+							<tool id="cdt.managedbuild.tool.gnu.cross.assembler.1020917631" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1764655592" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="_BELUM_DIPAKAI_|src/DB/DBBackend/v_sqlite-autoconf-3081101|DdyLib/Samples_GTK2|src/Ctrl|src/DB/DBBackend/v_wxsqlite3-3.2.0|wx_pch.cpp|src/JSON/x_wxJSON-1.2.1|src/Ctrl/Accordion|DdyLib/Ctrl/Button/CustomButton/sample|Thread|src/Ctrl/FlatNotebook/wxflatnotebook|src/Form|src/DB/DBBackend/v_soci|src/Base/Base.cpp|DdyLib/DB/DBBackend/v_libpqxx-4.0.1|Libraries/wiringPi/piNes.c|src/DB/DBBackend/x_mysql-5.1.73|src/Samples_GTK2|DdyLib|GUI/_Q_|src/Ctrl/x_DataViewCtrl_1|DdyLib/DB/DBBackend/v_soci|src/DB/DBBackend/v_libpqxx-4.0.1|src/DB/DBBackend/DBPostgresql.cpp|src/Base/wxBase|src/main.cpp|Libraries|DdyLib/DB/DBBackend/x_mysql-5.1.73|Libraries/x_wiringPi|src/DB/DBBackend/postgresql-9.4.4|DdyLib/Ctrl/Led/wxLED|DdyLib/DB/DBBackend/v_sqlite-autoconf-3081101|src/ArtProvider|src/JSON|src/Contrib|DdyLib/DB/DBBackend/v_wxsqlite3-3.2.0|src/AppBASE.cpp|DdyLib/DB/DBBackend/postgresql-9.4.4|src/Ctrl/x_Ctrl" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="AppX11.ilg.gnuarmeclipse.managedbuild.cross.target.elf.1706342992" name="Executable"/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="refreshScope" versionNumber="2">
-		<configuration configurationName="Linux_x86-64_debug">
-			<resource resourceType="PROJECT" workspacePath="/AppWxGTK2"/>
-		</configuration>
+		<configuration configurationName="ARM7_GLIBC_BASE_STATIC_Release"/>
 		<configuration configurationName="Linux_DBUG"/>
-		<configuration configurationName="RaspberryPi2_release">
+		<configuration configurationName="RaspberryPi2_debug">
 			<resource resourceType="PROJECT" workspacePath="/AppWxGTK2"/>
 		</configuration>
 		<configuration configurationName="RPi2_release"/>
-		<configuration configurationName="LINUX64_GLIBC_GTK2_SHARED_Release"/>
-		<configuration configurationName="LINUX64_GLIBC_BASE_STATIC_Debug"/>
-		<configuration configurationName="LINUX64_GLIBC_BASE_STATIC_Release">
-			<resource resourceType="PROJECT" workspacePath="/AppX11"/>
-		</configuration>
-		<configuration configurationName="Debug">
-			<resource resourceType="PROJECT" workspacePath="/AppX11"/>
-		</configuration>
 		<configuration configurationName="Linux_x86-64_release">
 			<resource resourceType="PROJECT" workspacePath="/AppWxGTK2"/>
 		</configuration>
-		<configuration configurationName="LINUX64_Release"/>
-		<configuration configurationName="ARM7_GLIBC_BASE_STATIC_Release"/>
-		<configuration configurationName="LINUX64_GLIBC_GTK2_STATIC_Release"/>
-		<configuration configurationName="Release">
-			<resource resourceType="PROJECT" workspacePath="/AppX11"/>
-		</configuration>
-		<configuration configurationName="ARM7_GLIBC_BASE_STATIC_Debug"/>
-		<configuration configurationName="Linux-x64_release">
-			<resource resourceType="PROJECT" workspacePath="/AppWxGTK2"/>
-		</configuration>
-		<configuration configurationName="Linux_RLEASE"/>
-		<configuration configurationName="Linux64_release"/>
-		<configuration configurationName="RPi2_Release">
-			<resource resourceType="PROJECT" workspacePath="/AppWxGTK2"/>
-		</configuration>
-		<configuration configurationName="ARM7_GLIBC_GTK2_STATIC_Debug"/>
-		<configuration configurationName="ARM7_GLIBC_GTK2_STATIC_Release"/>
 		<configuration configurationName="ARM7_GLIBC_GTK2_SHARED_Release">
 			<resource resourceType="PROJECT" workspacePath="/AppWxGTK2"/>
 		</configuration>
+		<configuration configurationName="Linux_RLEASE"/>
+		<configuration configurationName="RPi2_Release">
+			<resource resourceType="PROJECT" workspacePath="/AppWxGTK2"/>
+		</configuration>
+		<configuration configurationName="LINUX64_GLIBC_GTK2_SHARED_Release"/>
 		<configuration configurationName="LINUX64_GLIBC_GTK2_STATIC_Debug">
+			<resource resourceType="PROJECT" workspacePath="/AppX11"/>
+		</configuration>
+		<configuration configurationName="LINUX64_Release"/>
+		<configuration configurationName="ARM7_GLIBC_GTK2_STATIC_Release"/>
+		<configuration configurationName="Linux-x64_release">
+			<resource resourceType="PROJECT" workspacePath="/AppWxGTK2"/>
+		</configuration>
+		<configuration configurationName="LINUX64_GLIBC_GTK2_STATIC_Release"/>
+		<configuration configurationName="ARM7_GLIBC_BASE_STATIC_Debug"/>
+		<configuration configurationName="RaspberryPi2_release">
+			<resource resourceType="PROJECT" workspacePath="/AppWxGTK2"/>
+		</configuration>
+		<configuration configurationName="LINUX64_GLIBC_BASE_STATIC_Release">
+			<resource resourceType="PROJECT" workspacePath="/AppX11"/>
+		</configuration>
+		<configuration configurationName="Linux64_release"/>
+		<configuration configurationName="ARM7_GLIBC_GTK2_STATIC_Debug"/>
+		<configuration configurationName="Linux_x86-64_debug">
+			<resource resourceType="PROJECT" workspacePath="/AppWxGTK2"/>
+		</configuration>
+		<configuration configurationName="LINUX64_GLIBC_BASE_STATIC_Debug"/>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/AppX11"/>
+		</configuration>
+		<configuration configurationName="Release">
 			<resource resourceType="PROJECT" workspacePath="/AppX11"/>
 		</configuration>
 	</storageModule>
