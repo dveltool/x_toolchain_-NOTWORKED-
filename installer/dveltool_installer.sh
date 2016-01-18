@@ -47,7 +47,7 @@ mkdir -pv $INSTALLERDIR
 # sourced from http://sourceforge.net/p/wxformbuilder/code/HEAD/tree/3.x/trunk/
 # ----------------------------------------------------------------------
 
-#cd $BUILDIR
+cd $INSTALLERDIR
 
 #mkdir wxFormbuilder
 #cd wxFormbuilder
@@ -59,6 +59,8 @@ mkdir -pv $INSTALLERDIR
 #make config=release
 #cd $BUILDIR
 #mv wxFormbuilder/head/output $IDEDIR/wxFormbuilder/head/
+
+cp wxFormbuilder $IDEDIR/
 ln -s $INSTALLERDIR/desktop/wxformbuilder.desktop $DVELDIR/
 
 # 030 - eclipse
