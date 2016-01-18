@@ -17,7 +17,7 @@ ide/*
 # Ddy: particular file listed
 x_dveltool_installer_v00.sh
 # need decompress when installed on user's pc
-**/wx3ud_static/lib/libwx_gtk2u_core-3.0-arm-linux.a
-**/wx3ud_static/lib/libwx_baseu-3.0.a
-**/wx3ud_static/lib/libwx_gtk2u_core-3.0.a
+#**/wx3ud_static/lib/libwx_gtk2u_core-3.0-arm-linux.a
+#**/wx3ud_static/lib/libwx_baseu-3.0.a
+#**/wx3ud_static/lib/libwx_gtk2u_core-3.0.a
 
