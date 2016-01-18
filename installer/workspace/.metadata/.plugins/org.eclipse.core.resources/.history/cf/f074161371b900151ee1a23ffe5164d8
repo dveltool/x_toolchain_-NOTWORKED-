@@ -1,0 +1,17 @@
+/*
+ * Functions.h
+ *
+ *  Created on: Jan 13, 2016
+ *      Author: dedy
+ */
+
+#ifndef FUNCTIONS_H_
+#define FUNCTIONS_H_
+
+#include <>wx/wx.h>
+
+#define PrtDebug		wxMessageOutputDebug().Printf("TST");
+
+
+
+#endif /* FUNCTIONS_H_ */

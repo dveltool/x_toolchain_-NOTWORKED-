@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=/usr
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+libdir=${exec_prefix}/lib
+xcbincludedir=/opt/dveltool/toolchain/raspberrypi2/buildx_/buildroot-2015.11.1/../../host/usr/arm-buildroot-linux-gnueabihf/sysroot${datadir}/xcb
+pythondir=/opt/dveltool/toolchain/raspberrypi2/buildx_/buildroot-2015.11.1/../../host/usr/arm-buildroot-linux-gnueabihf/sysroot${prefix}/lib/python2.7/site-packages
+
+Name: XCB Proto
+Description: X protocol descriptions for XCB
+Version: 1.11

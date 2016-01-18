@@ -1,0 +1,31 @@
+/*
+ * MyThread.h
+ *
+ *  Created on: Jan 12, 2016
+ *      Author: dedy
+ */
+
+#ifndef MYTHREAD_H_
+#define MYTHREAD_H_
+
+#include <wx/wx.h>
+#include "UIMyFrame1.h"
+#include "Functions.h"
+
+wxDEFINE_EVENT(wxEVT_COMMAND_THREAD_COMPLETED, wxThreadEvent);
+wxDEFINE_EVENT(wxEVT_COMMAND_THREAD_UPDATE, wxThreadEvent);
+
+class UIMyFrame1;
+
+class MyThread: public wxThread {
+public:
+	MyThread(UIMyFrame1 *handler);
+	virtual ~MyThread();
+
+protected:
+	virtual ExitCode Entry();
+	UIMyFrame1 *m_pHandler;
+
+};
+
+#endif /* MYTHREAD_H_ */

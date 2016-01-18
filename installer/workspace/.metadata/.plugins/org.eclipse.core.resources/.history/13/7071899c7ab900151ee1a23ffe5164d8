@@ -1,0 +1,45 @@
+/*
+ * MyThread.cpp
+ *
+ *  Created on: Jan 12, 2016
+ *      Author: dedy
+ */
+
+#include <MyThread.h>
+
+MyThread::MyThread(UIMyFrame1 *handler) :
+		wxThread(wxTHREAD_DETACHED) {
+	m_pHandler = handler;
+}
+
+MyThread::~MyThread() {
+
+	wxCriticalSectionLocker enter(m_pHandler->m_pThreadCS);
+	// the thread is being destroyed, make sure not to leave dangling pointer arround
+	m_pHandler->m_pThread = NULL;
+
+}
+
+wxThread::ExitCode MyThread::Entry() {
+
+	wxThreadEvent evt1(wxEVT_COMMAND_THREAD_UPDATE);
+	wxThreadEvent evt2(wxEVT_COMMAND_THREAD_COMPLETED);
+
+
+	wxMilliSleep(1300);
+
+//	while (!TestDestroy()) {
+//		// do a bit of job ...
+//		wxQueueEvent(m_pHandler,
+//				new wxThreadEvent(wxEVT_COMMAND_THREAD_UPDATE));
+//	}
+
+// signal the event handler that this thread is going to be destroyed
+
+	wxQueueEvent(m_pHandler, new wxThreadEvent(wxEVT_COMMAND_THREAD_UPDATE));
+	wxQueueEvent(m_pHandler, new wxThreadEvent(wxEVT_COMMAND_THREAD_COMPLETED));
+	//wxPostEvent(m_pHandler, evt);
+
+	return (wxThread::ExitCode) 0;
+
+}

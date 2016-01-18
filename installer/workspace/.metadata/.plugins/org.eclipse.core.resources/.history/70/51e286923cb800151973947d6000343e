@@ -1,0 +1,27 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../UI.cpp \
+../UIMyFrame1.cpp 
+
+OBJS += \
+./UI.o \
+./UIMyFrame1.o 
+
+CPP_DEPS += \
+./UI.d \
+./UIMyFrame1.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+%.o: ../%.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C++ Compiler'
+	g++ -I/opt/dveltool/workspace/AppWxGTK2 -I/opt/dveltool/toolchain/x86_64/sysroot/usr/local/lib/wx/include/gtk2-unicode-static-3.0 -I/opt/dveltool/toolchain/x86_64/sysroot/usr/local/include/wx-3.0 -O3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<" `/opt/dveltool/toolchain/x86_64/sysroot/usr/local/bin/wx-config --cxxflags`
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

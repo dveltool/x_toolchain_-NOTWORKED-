@@ -1,0 +1,13 @@
+prefix=/opt/dveltool/toolchain/x86_64/buildx_/buildroot-2015.11.1/../../host/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+xcbproto_version=1.11
+
+Name: XCB
+Description: X-protocol C Binding
+Version: 1.11.1
+Requires.private: pthread-stubs xau >= 0.99.2 xdmcp
+Libs: -L${libdir} -lxcb
+Libs.private: 
+Cflags: -I${includedir}

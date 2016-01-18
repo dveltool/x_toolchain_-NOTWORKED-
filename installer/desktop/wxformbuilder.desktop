@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=wxFormbuilder
+GenericName="wxFormbuilder"
+Comment="wxFormbuilder for wxWidgets software development"
+Exec=/opt/dveltool/toolchain/ide/wxFormbuilder/output/bin/wxformbuilder
+Icon=/opt/dveltool/toolchain/ide/wxFormbuilder/output/resources/icons/logo.png
+Terminal=false
+Categories=Development;IDE
+MimeType=text/x-eclipse
+Keywords=ide;
+Name[en_US]=wxFormbuilder
+

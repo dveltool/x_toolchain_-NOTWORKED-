@@ -1,0 +1,12 @@
+prefix=/opt/dveltool/toolchain/x86_64/buildx_/buildroot-2015.11.1/../../host/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: xkbfile
+Description: The xkbfile Library
+Version: 1.0.9
+Requires: kbproto
+Requires.private: x11
+Cflags: -I${includedir}
+Libs: -L${libdir} -lxkbfile

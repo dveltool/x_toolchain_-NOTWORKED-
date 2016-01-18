@@ -1,0 +1,30 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CPP_SRCS += \
+../.UI.cpp \
+../UIMyFrame1.cpp \
+../main.cpp 
+
+OBJS += \
+./.UI.o \
+./UIMyFrame1.o \
+./main.o 
+
+CPP_DEPS += \
+./.UI.d \
+./UIMyFrame1.d \
+./main.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+%.o: ../%.cpp
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross G++ Compiler'
+	g++ -DWX_PRECOMP -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -I/opt/dveltool/workspace/AppWxGTK2 -I/opt/DEVEL/Toolchain/LINUX64_GLIBC_GTK2_STATIC_Debug/staging/usr/lib/wx/include/gtk2-unicode-static-3.0 -I/opt/DEVEL/Toolchain/LINUX64_GLIBC_GTK2_STATIC_Debug/staging/usr/include/wx-3.0 -I/opt/DEVEL/DEVEL2/wiringPi/wiringPi/INSTALDY_STATIC/local/include -I/opt/DEVEL/Toolchain/LINUX64_GLIBC_GTK2_STATIC_Debug/staging/usr/lib/wx/include/gtk2-unicode-static-3.0 -I/opt/DEVEL/Toolchain/LINUX64_GLIBC_GTK2_STATIC_Debug/staging/usr/include/wx-3.0 -include/opt/dveltool/workspace/AppWxGTK2/PCH/wx_pch.h -O0 -g -pthread -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

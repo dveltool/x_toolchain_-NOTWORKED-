@@ -1,0 +1,5 @@
+#!/opt/dveltool/toolchain/x86_64/buildx_/buildroot-2015.11.1/../../host/usr/bin/python2.7
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

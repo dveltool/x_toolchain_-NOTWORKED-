@@ -1,0 +1,16 @@
+prefix=/opt/dveltool/toolchain/x86_64/buildx_/buildroot-2015.11.1/../../host/usr
+exec_prefix=${prefix}
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+PACKAGE=util-macros
+# Used by XORG_INSTALL
+pkgdatadir=${datadir}/${PACKAGE}
+# docdir is kept for backwards compatibility with XORG_INSTALL from
+# util-macros 1.4
+docdir=${pkgdatadir}
+
+Name: X.Org Macros
+Description: A set of autoconf project macros for X.Org modules
+Version: 1.19.0
+

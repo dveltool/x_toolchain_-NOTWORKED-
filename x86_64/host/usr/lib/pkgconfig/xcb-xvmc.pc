@@ -1,0 +1,11 @@
+prefix=/opt/dveltool/toolchain/x86_64/buildx_/buildroot-2015.11.1/../../host/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: XCB XvMC
+Description: XCB XvMC Extension
+Version: 1.11.1
+Requires: xcb xcb-xv
+Libs: -L${libdir} -lxcb-xvmc
+Cflags: -I${includedir}

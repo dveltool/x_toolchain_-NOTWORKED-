@@ -1,0 +1,22 @@
+=head2 Fri Jan 15 12:09:07 2016: C<Module> L<XML::Parser|XML::Parser>
+
+=over 4
+
+=item *
+
+C<installed into: /opt/dveltool/toolchain/x86_64/buildx_/buildroot-2015.11.1/../../host/usr/lib/perl>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.41>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+

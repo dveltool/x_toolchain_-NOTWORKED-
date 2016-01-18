@@ -1,0 +1,14 @@
+prefix=/opt/dveltool/toolchain/x86_64/buildx_/buildroot-2015.11.1/../../host/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+gmodule_supported=true
+
+Name: GModule
+Description: Dynamic module loader for GLib
+Requires: glib-2.0
+Version: 2.46.1
+Libs: -L${libdir} -Wl,--export-dynamic -lgmodule-2.0 -pthread
+Libs.private: -ldl
+Cflags: -pthread

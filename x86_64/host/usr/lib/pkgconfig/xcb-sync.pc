@@ -1,0 +1,11 @@
+prefix=/opt/dveltool/toolchain/x86_64/buildx_/buildroot-2015.11.1/../../host/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: XCB Sync
+Description: XCB Sync Extension
+Version: 1.11.1
+Requires: xcb
+Libs: -L${libdir} -lxcb-sync
+Cflags: -I${includedir}

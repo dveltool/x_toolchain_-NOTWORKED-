@@ -1,0 +1,14 @@
+prefix=/opt/dveltool/toolchain/x86_64/buildx_/buildroot-2015.11.1/../../host/usr
+exec_prefix=/opt/dveltool/toolchain/x86_64/buildx_/buildroot-2015.11.1/../../host/usr
+libdir=/opt/dveltool/toolchain/x86_64/buildx_/buildroot-2015.11.1/../../host/usr/lib
+includedir=/opt/dveltool/toolchain/x86_64/buildx_/buildroot-2015.11.1/../../host/usr/include
+
+Name: FreeType 2
+URL: http://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 18.1.12
+Requires:
+Requires.private: 
+Libs: -L${libdir} -lfreetype
+Libs.private: 
+Cflags: -I${includedir}/freetype2

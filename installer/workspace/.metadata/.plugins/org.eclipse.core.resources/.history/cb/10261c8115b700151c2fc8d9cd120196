@@ -1,0 +1,65 @@
+///////////////////////////////////////////////////////////////////////////
+// C++ code generated with wxFormBuilder (version Jan  5 2016)
+// http://www.wxformbuilder.org/
+//
+// PLEASE DO "NOT" EDIT THIS FILE!
+///////////////////////////////////////////////////////////////////////////
+
+#include "MyProject1.h"
+
+///////////////////////////////////////////////////////////////////////////
+
+MyFrame1::MyFrame1( wxWindow* parent, wxWindowID id, const wxString& title, const wxPoint& pos, const wxSize& size, long style ) : wxFrame( parent, id, title, pos, size, style )
+{
+	this->SetSizeHints( wxDefaultSize, wxDefaultSize );
+	
+	wxBoxSizer* bSizer1;
+	bSizer1 = new wxBoxSizer( wxVERTICAL );
+	
+	m_staticText1 = new wxStaticText( this, wxID_ANY, wxT("Hello World!"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText1->Wrap( -1 );
+	m_staticText1->SetFont( wxFont( 15, 74, 90, 90, false, wxT("Sans") ) );
+	
+	bSizer1->Add( m_staticText1, 0, wxALL|wxALIGN_CENTER_HORIZONTAL, 5 );
+	
+	wxFlexGridSizer* fgSizer1;
+	fgSizer1 = new wxFlexGridSizer( 0, 2, 0, 0 );
+	fgSizer1->AddGrowableCol( 1 );
+	fgSizer1->SetFlexibleDirection( wxBOTH );
+	fgSizer1->SetNonFlexibleGrowMode( wxFLEX_GROWMODE_SPECIFIED );
+	
+	m_staticText2 = new wxStaticText( this, wxID_ANY, wxT("Type your name here:"), wxDefaultPosition, wxDefaultSize, 0 );
+	m_staticText2->Wrap( -1 );
+	fgSizer1->Add( m_staticText2, 0, wxALL, 5 );
+	
+	m_textCtrl1 = new wxTextCtrl( this, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, 0 );
+	#ifdef __WXGTK__
+	if ( !m_textCtrl1->HasFlag( wxTE_MULTILINE ) )
+	{
+	m_textCtrl1->SetMaxLength(  );
+	}
+	#else
+	m_textCtrl1->SetMaxLength(  );
+	#endif
+	fgSizer1->Add( m_textCtrl1, 0, wxALL|wxEXPAND, 5 );
+	
+	
+	fgSizer1->Add( 0, 0, 1, wxEXPAND, 5 );
+	
+	m_button1 = new wxButton( this, wxID_ANY, wxT("Click me"), wxDefaultPosition, wxDefaultSize, 0 );
+	fgSizer1->Add( m_button1, 0, wxALL, 5 );
+	
+	
+	bSizer1->Add( fgSizer1, 0, wxEXPAND, 5 );
+	
+	
+	this->SetSizer( bSizer1 );
+	this->Layout();
+	m_statusBar1 = this->CreateStatusBar( 1, wxST_SIZEGRIP, wxID_ANY );
+	
+	this->Centre( wxBOTH );
+}
+
+MyFrame1::~MyFrame1()
+{
+}

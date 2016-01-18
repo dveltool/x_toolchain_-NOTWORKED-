@@ -1,0 +1,5 @@
+#!/bin/sh
+
+PATH="/opt/dveltool/toolchain/x86_64/buildx_/buildroot-2015.11.1/../../host/usr/bin:$PATH"
+
+exec mkfontscale -b -s -l "$@"

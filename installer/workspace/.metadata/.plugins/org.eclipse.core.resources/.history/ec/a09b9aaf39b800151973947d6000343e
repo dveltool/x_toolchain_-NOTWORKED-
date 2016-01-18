@@ -1,0 +1,20 @@
+#include "UIMyFrame1.h"
+
+UIMyFrame1::UIMyFrame1(wxWindow* parent) :
+		MyFrame1(parent) {
+
+	wxString str = wxString::Format( "Welcome to %s", wxVERSION_STRING  );
+	m_staticText3->SetLabel(str);
+
+}
+
+void UIMyFrame1::m_button1OnButtonClick(wxCommandEvent& event) {
+// TODO: Implement m_button1OnButtonClick
+	wxString name = m_textCtrl1->GetValue();
+
+//wxMessageBox(name);
+
+	wxMessageBox(wxString::Format("Welcome to %s!\n" "\n" "This is the minimal wxWidgets sample\n"
+			"running under %s.", wxVERSION_STRING, wxGetOsDescription()),			"About wxWidgets minimal sample", wxOK | wxICON_INFORMATION, this);
+
+}

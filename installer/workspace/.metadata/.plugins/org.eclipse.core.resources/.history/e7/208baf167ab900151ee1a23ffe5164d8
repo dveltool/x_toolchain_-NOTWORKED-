@@ -1,0 +1,117 @@
+#include "UIMyFrame1.h"
+
+UIMyFrame1::UIMyFrame1(wxWindow* parent) :
+		MyFrame1(parent) {
+
+	//m_pThread = NULL;
+	Bind(wxEVT_COMMAND_THREAD_UPDATE, &UIMyFrame1::OnThreadUpdate, this );
+	Bind(wxEVT_COMMAND_THREAD_COMPLETED, &UIMyFrame1::OnThreadCompletion, this );
+
+	wxString str = wxString::Format("Welcome to %s, running on %s",
+	wxVERSION_STRING, wxGetOsDescription());
+	m_staticText3->SetLabel(str);
+
+	m_statusBar1->SetStatusText("This is status bar");
+
+	m_staticText4->SetLabel(
+			"wxWidgets is very easy to learn, it's C++ and fully OOP");
+
+}
+
+void UIMyFrame1::MyFrame1OnClose(wxCloseEvent& event) {
+
+	{
+		wxCriticalSectionLocker enter(m_pThreadCS);
+
+		if (m_pThread) // does the thread still exist?
+		{
+			wxMessageOutputDebug().Printf("MYFRAME: deleting thread");
+			if (m_pThread->Delete() != wxTHREAD_NO_ERROR)
+				wxLogError
+				("Can't delete the thread");
+		}
+	}		// exit from the critical section to gibe the thread
+	// the possibility to enter its destructor
+	// (which is guarded with m_pThreadCS critical section!)
+
+	while (1) {
+		{ // was the ~MyThread() function executed?
+			wxCriticalSectionLocker enter(m_pThreadCS);
+			if (!m_pThread)
+				break;
+		}
+		// wait for thread completion
+		wxThread::This()->Sleep(1);
+	}
+
+	Destroy();
+}
+
+void UIMyFrame1::m_button1OnButtonClick(wxCommandEvent& event) {
+
+	wxString name = wxString::Format("Hello %s!! How are you?",
+			m_textCtrl1->GetValue());
+	wxMessageBox(name);
+
+}
+
+void UIMyFrame1::m_button2OnButtonClick(wxCommandEvent& event) {
+	DoStartThread();
+}
+
+void UIMyFrame1::DoResumeThread() {
+
+}
+
+void UIMyFrame1::DoPauseThread() {
+	// anytime we access the _pThread pointer we must ensure that it won't
+	// be modified in the meanwhile; since only a single thread my be
+	// insde a given critical section at a given time, the following code
+	// is safe:
+	wxCriticalSectionLocker enter(m_pThreadCS);
+
+	if (m_pThread) // does the thread still exist?
+	{
+		// without a critical section, once reached this point it may happen
+		// that the OS scheduler gives contro to the MyThread::Entry() function,
+		// which in turn may return (because it completes its work)
+		// making invalid the m_pThread pointer
+
+		if (m_pThread->Pause() != wxTHREAD_NO_ERROR) {
+			wxLogError
+			("Can't pause the thread!");
+		}
+
+	}
+
+}
+
+void UIMyFrame1::OnThreadCompletion(wxThreadEvent&) {
+
+	wxMessageOutputDebug().Printf("MYFRAME: MyThread update...\n");
+
+}
+
+void UIMyFrame1::OnThreadUpdate(wxThreadEvent&) {
+
+	wxMessageOutputDebug().Printf("MYFRAME: MyAThread update...\n");
+wxMessageBox(__FUNCTION__);
+}
+
+void UIMyFrame1::DoStartThread() {
+
+	m_pThread = new MyThread(this);
+	if (m_pThread->Run() != wxTHREAD_NO_ERROR) {
+		wxLogError
+		("Can not create thread!");
+		delete m_pThread;
+		m_pThread = NULL;
+	}
+	wxLogMessage(__FUNCTION__);
+
+	// after call  to wxThread::Run(), the m+_pThread pointer is "unsafe":
+	// at any moment the thread may cease to exist (because it's completes its work).
+	// to avoid dangling pointers OnThreadExit()  will set m_pThread
+	// to NULL when the tread dies.
+
+}
