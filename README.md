@@ -12,20 +12,22 @@ HOW TO INSTALL:
 - chmod 755 dveltool_installer.sh
 - ./dveltool_installer.sh
 
-This IDE/Toolchain tested on following platform:
+This development IDE/Toolchain tested and running well on following platform:
 - Ubuntu 14.04-LTS Trusty Tahr (x86_64)
+- Linux Mint 17.3 (x86_64)
 
-Available target board are:
-- Raspberry Pi 2 Model B
-- x84_64
+Available toolchain & target board:
+- Raspberry Pi 2 Model B      => raspberrypi2
+- Amd64 / x84_64              => x86_64
 
 The cross compiler toolchain was generated using buildroot.
 
-This system composed by following application as the core component:
+This system made of following application as the core components:
 - eclipse IDE		(Luna)
 - wxWidgets			(wxWidgets-3.0.2)
-- wxFormbuilder		(wxFromBuilder v3.5-RC2)
+- wxFormbuilder	(wxFromBuilder v3.5-RC2)
 - buildroot			(buildroot-2015.11.1)
+- Linux
 
 Your comment and feedback highly appreciated to improve this system.
 

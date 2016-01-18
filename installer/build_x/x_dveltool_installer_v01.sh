@@ -20,14 +20,7 @@ MYTS=$(date +%s)
 
 # Ddy: do this first, most top priority
 sudo mkdir $DVELDIR ; sudo chown $USER $DVELDIR -R ; cd $DVELDIR
-
-if [ -d "toolchain" ]; then
-	cd toolchain	
-	git pull
-	cd ..
-else
-	git clone https://github.com/dveltool/toolchain.git
-fi
+git clone https://github.com/dveltool/toolchain.git
 
 # 005 - prepare directory
 # ----------------------------------------------------------------------
