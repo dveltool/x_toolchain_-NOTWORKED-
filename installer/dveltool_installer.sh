@@ -60,7 +60,7 @@ cd $INSTALLERDIR
 #cd $BUILDIR
 #mv wxFormbuilder/head/output $IDEDIR/wxFormbuilder/head/
 
-cp wxFormbuilder $IDEDIR/
+cp wxFormbuilder $IDEDIR/ -R
 ln -s $INSTALLERDIR/desktop/wxformbuilder.desktop $DVELDIR/
 
 # 030 - eclipse
