@@ -47,9 +47,9 @@ mkdir -pv $INSTALLERDIR
 # sourced from http://sourceforge.net/p/wxformbuilder/code/HEAD/tree/3.x/trunk/
 # ----------------------------------------------------------------------
 
-if [ ! -d "$DVELDIR/toolchain/ide/wxFormbuilder" ]; then
-	cp -R $DVELDIR/toolchain/installer/wxFormbuilder $DVELDIR/toolchain/ide/
-fi
+#if [ ! -d "$DVELDIR/toolchain/ide/wxFormbuilder" ]; then
+#	cp -R $DVELDIR/toolchain/installer/wxFormbuilder $DVELDIR/toolchain/ide/
+#fi
 
 rm $DVELDIR/wxformbuilder.desktop
 ln -s $DVELDIR/toolchain/installer/desktop/wxformbuilder.desktop $DVELDIR/wxformbuilder.desktop
@@ -85,7 +85,7 @@ cp $DVELDIR/toolchain/installer/workspace $DVELDIR -R
 
 cd /opt/dveltool/toolchain/raspberrypi2/host/usr/arm-buildroot-linux-gnueabihf/sysroot/usr/local/wx3ud_static/lib
 
-if [ -f "libwx_gtk2u_core-3.0-arm-linux.a"  ]; then
+if [ ! -f "libwx_gtk2u_core-3.0-arm-linux.a"  ]; then
 	tar -xapvf libwx_gtk2u_core-3.0-arm-linux.a.tar.gz
 fi
 
@@ -93,7 +93,7 @@ fi
 
 cd /opt/dveltool/toolchain/x86_64/host/usr/x86_64-buildroot-linux-gnu/sysroot/usr/local/wx3ud_static/lib
 
-if [ -f "libwx_baseu-3.0.a"  ]; then
+if [ ! -f "libwx_baseu-3.0.a"  ]; then
 	tar -xapvf libwx_baseu-3.0.a.tar.gz
 	tar -xapvf libwx_gtk2u_core-3.0.a.tar.gz
 fi
