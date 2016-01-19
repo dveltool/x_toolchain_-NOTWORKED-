@@ -1,7 +1,7 @@
 Develop Raspberry Pi application easily with Eclipse IDE and cross compiler toolchain.
 Create your application on linux desktop and run on Raspberry Pi 2.
 
-dveltool is now BETA VERSION
+*** dveltool is now BETA VERSION, please regularly visit this site because we update everyday ***
 
 REQUIREMENT:
 
@@ -33,6 +33,7 @@ This system made of following application as the core components:
 - Linux
 
 Your comment and feedback highly appreciated to improve this system.
+Need help, comment and feedback? please address an email to: dveltool@gmail.com
 
 Disclaimer:
 THE PROGRAM IS DISTRIBUTED IN THE HOPE THAT IT WILL BE USEFUL FOR PEOPLES, THIS PROGRAM IS PROVIDED "AS IS" AND WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED. 
