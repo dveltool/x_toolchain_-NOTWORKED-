@@ -1,7 +1,7 @@
-dveltool is now BETA VERSION
-
 Develop Raspberry Pi application easily with Eclipse IDE and cross compiler toolchain.
 Create your application on linux desktop and run on Raspberry Pi 2.
+
+dveltool is now BETA VERSION
 
 REQUIREMENT:
 
