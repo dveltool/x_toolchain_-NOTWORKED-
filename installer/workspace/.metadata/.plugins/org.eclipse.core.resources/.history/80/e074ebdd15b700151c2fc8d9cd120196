@@ -1,8 +1,0 @@
-#include "UIMyFrame1.h"
-
-UIMyFrame1::UIMyFrame1( wxWindow* parent )
-:
-MyFrame1( parent )
-{
-
-}

@@ -47,42 +47,36 @@ mkdir -pv $INSTALLERDIR
 # sourced from http://sourceforge.net/p/wxformbuilder/code/HEAD/tree/3.x/trunk/
 # ----------------------------------------------------------------------
 
-cd $INSTALLERDIR
+if [ ! -d "$DVELDIR/toolchain/ide/wxFormbuilder" ]; then
+	cp -R $DVELDIR/toolchain/installer/wxFormbuilder/ $DVELDIR/toolchain/ide/
+fi
 
-#mkdir wxFormbuilder
-#cd wxFormbuilder
-#svn checkout svn://svn.code.sf.net/p/wxformbuilder/code/3.x/trunk head
-#cd head
-#chmod 755 create_build_files4.sh
-#./create_build_files4.sh
-#cd build/3.0/gmake
-#make config=release
-#cd $BUILDIR
-#mv wxFormbuilder/head/output $IDEDIR/wxFormbuilder/head/
-
-cp wxFormbuilder $IDEDIR/ -R
-ln -s $INSTALLERDIR/desktop/wxformbuilder.desktop $DVELDIR/
+rm $DVELDIR/wxformbuilder.desktop
+ln -s $DVELDIR/toolchain/installer/desktop/wxformbuilder.desktop $DVELDIR/wxformbuilder.desktop
 
 # 030 - eclipse
 # ----------------------------------------------------------------------
 
-cd $BUILDIR
+if [ ! -d "$DVELDIR/toolchain/ide/eclipse" ]; then
 
-ECFN=eclipse-cpp-luna-SR2-linux-gtk-x86_64.tar.gz
-wget -c http://mirror.atlas-it.de/eclipse/$ECFN
-tar -xapvf $ECFN
-mv $IDEDIR/eclipse $IDEDIR/eclipse-$MYTS
-mv eclipse $IDEDIR
-# shortcut
-ln -s $INSTALLERDIR/desktop/eclipse.desktop $DVELDIR/
-# restore/set default configuration
-mkdir -pv $TCDIR/ide/eclipse/configuration/.settings
-cp $TCDIR/installer/eclipse/org.eclipse.ui.ide.prefs $TCDIR/ide/eclipse/configuration/.settings
+	ECFN=eclipse-cpp-luna-SR2-linux-gtk-x86_64.tar.gz
+	cd $DVELDIR/toolchain/build
+	wget -c http://mirror.atlas-it.de/eclipse/$ECFN
+	tar -xapvf $ECFN
+	mv eclipse $DVELDIR/toolchain/ide
+	# shortcut
+	$DVELDIR/eclipse.desktop
+	ln -s $DVELDIR/toolchain/installer/desktop/eclipse.desktop $DVELDIR/eclipse.desktop
+	# restore/set default configuration
+	mkdir -pv $DVELDIR/toolchain/ide/eclipse/configuration/.settings
+	cp $DVELDIR/toolchain/installer/eclipse/org.eclipse.ui.ide.prefs $DVELDIR/toolchain/ide/eclipse/configuration/.settings
+
+fi
 
 # 040 - workspace
 # ----------------------------------------------------------------------
 
-cp $INSTALLERDIR/workspace $DVELDIR -R
+cp $DVELDIR/toolchain/installer/workspace $DVELDIR -R
 
 # 050 - decompress oversize lib.a
 # ----------------------------------------------------------------------
