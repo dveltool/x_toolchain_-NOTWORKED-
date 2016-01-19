@@ -11,9 +11,9 @@ $ sudo apt-get install git openjdk-8-jdk build-essential libgtk2.0-dev libxxf86v
 
 HOW TO INSTALL:
 -----------------------------------
-$ wget https://raw.githubusercontent.com/dveltool/toolchain/master/installer.sh
-$ chmod 755 installer.sh
-$ ./installer.sh
+- wget https://raw.githubusercontent.com/dveltool/toolchain/master/installer.sh
+- chmod 755 installer.sh
+- ./installer.sh
 
 This development IDE/Toolchain tested and running well on following platform:
 - Ubuntu 14.04-LTS Trusty Tahr (x86_64)
