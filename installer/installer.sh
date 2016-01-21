@@ -47,6 +47,8 @@ if [ -d "wxFormBuilder" ]; then
 	rm -rf "wxFormBuilder"
 fi
 
+PATH=/opt/dveltool/toolchain/x86_64/host/usr/x86_64-buildroot-linux-gnu/sysroot/usr/localx_/linux_x86-64_shared_release/bin:$PATH
+
 mkdir wxFormBuilder
 cd wxFormBuilder
 svn checkout svn://svn.code.sf.net/p/wxformbuilder/code/3.x/trunk head
