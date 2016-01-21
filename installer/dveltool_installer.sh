@@ -8,17 +8,13 @@
 
 DVELDIR=/opt/dveltool
 
-TCDIR=$DVELDIR/toolchain
-BUILDIR=$TCDIR/build
-IDEDIR=$TCDIR/ide
-INSTALLERDIR=$TCDIR/installer
-
 MYTS=$(date +%s)
 
 # 000 - Toolchain
 # ----------------------------------------------------------------------
 
 # Ddy: do this first, most top priority
+
 sudo mkdir $DVELDIR ; sudo chown $USER $DVELDIR -R ; cd $DVELDIR
 
 if [ -d "toolchain" ]; then
@@ -32,27 +28,38 @@ fi
 # 005 - prepare directory
 # ----------------------------------------------------------------------
 
-mkdir -pv $BUILDIR
-mkdir -pv $IDEDIR/wxFormbuilder/head
-mkdir -pv $INSTALLERDIR
+mkdir -pv $DVELDIR/toolchain/build
+mkdir -pv $DVELDIR/toolchain/ide
 
-# 010 - wxWidgets :: installation in the host
+# 010 - wxWidgets :: BUILD
 # ----------------------------------------------------------------------
 
-#sudo apt-get install libwxgtk3.0-0 libwxgtk3.0-dev
-#sudo apt-get install libwxgtk-media*
-#sudo apt-get install libwxbase3.0-dev libwxgtk3.0-0 libwxgtk-media3.0-0 libwxgtk3.0-dev libwxgtk-media3.0-dev
+# x86_64_shared // wxFormBuilder need this
+sh ./wxWidgets/linux_x86-64_shared_release.sh
 
 # 020 - wxFormbuilder
 # sourced from http://sourceforge.net/p/wxformbuilder/code/HEAD/tree/3.x/trunk/
 # ----------------------------------------------------------------------
 
-#if [ ! -d "$DVELDIR/toolchain/ide/wxFormbuilder" ]; then
-#	cp -R $DVELDIR/toolchain/installer/wxFormbuilder $DVELDIR/toolchain/ide/
-#fi
+cd $DVELDIR/toolchain/build
 
-rm $DVELDIR/wxformbuilder.desktop
-ln -s $DVELDIR/toolchain/installer/desktop/wxformbuilder.desktop $DVELDIR/wxformbuilder.desktop
+if [ -d "wxFormBuilder" ]; then
+	rm -rf "wxFormBuilder"
+fi
+
+mkdir wxFormBuilder
+cd wxFormbuilder
+svn checkout svn://svn.code.sf.net/p/wxformbuilder/code/3.x/trunk head
+cd head
+chmod 755 create_build_files4.sh
+./create_build_files4.sh
+cd build/3.0/gmake
+make config=release
+mkdir -pv $DVELDIR/toolchain/ide/wxFormBuilder/head
+mv $DVELDIR/toolchain/build/wxFormBuilder/head/output $DVELDIR/toolchain/ide/wxFormBuilder/head/output
+# shortcut
+rm $DVELDIR/wxFormBuilder.desktop
+ln -s $DVELDIR/toolchain/installer/wxFormBuilder/wxFormBuilder.desktop $DVELDIR/wxFormBuilder.desktop
 
 # 030 - eclipse
 # ----------------------------------------------------------------------
@@ -60,13 +67,12 @@ ln -s $DVELDIR/toolchain/installer/desktop/wxformbuilder.desktop $DVELDIR/wxform
 if [ ! -d "$DVELDIR/toolchain/ide/eclipse" ]; then
 
 	ECFN=eclipse-cpp-luna-SR2-linux-gtk-x86_64.tar.gz
-	cd $DVELDIR/toolchain/build
-	wget -c http://mirror.atlas-it.de/eclipse/$ECFN
+	wget -P $DVELDIR/toolchain/build -c http://mirror.atlas-it.de/eclipse/$ECFN
+	cd $DVELDIR/toolchain/ide
 	tar -xapvf $ECFN
-	mv eclipse $DVELDIR/toolchain/ide
 	# shortcut
-	$DVELDIR/eclipse.desktop
-	ln -s $DVELDIR/toolchain/installer/desktop/eclipse.desktop $DVELDIR/eclipse.desktop
+	rm $DVELDIR/eclipse.desktop
+	ln -s $DVELDIR/toolchain/installer/eclipse/eclipse.desktop $DVELDIR/eclipse.desktop
 	# restore/set default configuration
 	mkdir -pv $DVELDIR/toolchain/ide/eclipse/configuration/.settings
 	cp $DVELDIR/toolchain/installer/eclipse/org.eclipse.ui.ide.prefs $DVELDIR/toolchain/ide/eclipse/configuration/.settings
@@ -78,26 +84,6 @@ fi
 
 cp $DVELDIR/toolchain/installer/workspace $DVELDIR -R
 
-# 050 - decompress oversize lib.a
-# ----------------------------------------------------------------------
-
-# restore oversized library of raspberrypi2
-
-cd /opt/dveltool/toolchain/raspberrypi2/host/usr/arm-buildroot-linux-gnueabihf/sysroot/usr/local/wx3ud_static/lib
-
-if [ ! -f "libwx_gtk2u_core-3.0-arm-linux.a"  ]; then
-	tar -xapvf libwx_gtk2u_core-3.0-arm-linux.a.tar.gz
-fi
-
-# restore oversized library of x86_64
-
-cd /opt/dveltool/toolchain/x86_64/host/usr/x86_64-buildroot-linux-gnu/sysroot/usr/local/wx3ud_static/lib
-
-if [ ! -f "libwx_baseu-3.0.a"  ]; then
-	tar -xapvf libwx_baseu-3.0.a.tar.gz
-	tar -xapvf libwx_gtk2u_core-3.0.a.tar.gz
-fi
- 
 # 100 - FINISH - -
 # ----------------------------------------------------------------------
 

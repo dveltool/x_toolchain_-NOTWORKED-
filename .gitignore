@@ -1,7 +1,9 @@
 # Ddy: pending release are:
 x86_32/*
+x86_64-uclibc/*
+x86_64-uclib-static/*
 
-# Ddy: Totaly not for uploaded
+# Ddy: Totaly not for for uploaded to github
 build/*
 ide/*
 **/buildx_/*
@@ -9,6 +11,8 @@ ide/*
 **_debug
 .log
 **.log
+**/localx_/*
+**/x_local/*
 
 # Precompiled Headers
 *.gch
