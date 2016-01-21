@@ -7,7 +7,7 @@ REQUIREMENT:
 -------------------------
 Ubuntu:
 
-$ sudo apt-get install git openjdk-8-jdk build-essential libgtk2.0-dev libxxf86vm-dev libgstreamer0.10-0 libgstreamer-plugins-base0.10-0
+$ sudo apt-get install git openjdk-7-jdk build-essential libgtk2.0-dev libxxf86vm-dev libgstreamer0.10-0 libgstreamer-plugins-base0.10-0 libwebkitgtk-dev libgstreamer0.10-dev
 
 HOW TO INSTALL:
 -------------------------
