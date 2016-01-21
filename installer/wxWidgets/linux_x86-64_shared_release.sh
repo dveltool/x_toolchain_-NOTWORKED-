@@ -21,8 +21,7 @@ mkdir -pv wxWidgets-3.0.2/buildx_/$BUILD
 cd wxWidgets-3.0.2/buildx_/$BUILD
 
 # configure
-../../configure --with-gtk 
---prefix=/opt/dveltool/toolchain/$BOARD/host/usr/$ABI/sysroot/usr/localx_/$BUILD --with-libtiff=builtin --with-libjpeg=builtin --with-libpng=builtin --with-regex=builtin --with-zlib=builtin --with-expat=builtin LDFLAGS="-static-libstdc++ -static-libgcc" --enable-mediactrl
+../../configure --with-gtk --prefix=/opt/dveltool/toolchain/$BOARD/host/usr/$ABI/sysroot/usr/localx_/$BUILD --with-libtiff=builtin --with-libjpeg=builtin --with-libpng=builtin --with-regex=builtin --with-zlib=builtin --with-expat=builtin LDFLAGS="-static-libstdc++ -static-libgcc" --enable-mediactrl
 make
 make install
 
