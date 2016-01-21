@@ -4,14 +4,14 @@ Create your application on linux desktop and run on Raspberry Pi 2.
 *** dveltool is now BETA VERSION, please regularly visit this site because we update everyday ***
 
 REQUIREMENT:
-
+-------------------------
 Ubuntu:
 
 $ sudo apt-get install git openjdk-8-jdk build-essential libgtk2.0-dev libxxf86vm-dev libgstreamer0.10-0 libgstreamer-plugins-base0.10-0
 
 HOW TO INSTALL:
------------------------------------
-- wget https://raw.githubusercontent.com/dveltool/toolchain/master/dveltool_installer.sh
+-------------------------
+- wget https://raw.githubusercontent.com/dveltool/toolchain/master/installer/dveltool_installer.sh
 - chmod 755 installer.sh
 - ./installer.sh
 
