@@ -42,7 +42,6 @@ sh $DVELDIR/toolchain/installer/wxWidgets/linux_x86-64_shared_release.sh
 
 
 
-exit
 
 
 
