@@ -48,7 +48,7 @@ if [ -d "wxFormBuilder" ]; then
 fi
 
 mkdir wxFormBuilder
-cd wxFormbuilder
+cd wxFormBuilder
 svn checkout svn://svn.code.sf.net/p/wxformbuilder/code/3.x/trunk head
 cd head
 chmod 755 create_build_files4.sh
