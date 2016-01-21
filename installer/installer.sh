@@ -58,7 +58,7 @@ chmod 755 create_build_files4.sh
 cd build/3.0/gmake
 make config=release
 mkdir -pv $DVELDIR/toolchain/ide/wxFormBuilder/head
-mv $DVELDIR/toolchain/build/wxFormBuilder/head/output $DVELDIR/toolchain/ide/wxFormBuilder/head/output
+mv $DVELDIR/toolchain/build/wxFormBuilder/head/output $DVELDIR/toolchain/ide/wxFormBuilder/head
 # shortcut
 rm $DVELDIR/wxFormBuilder.desktop
 ln -s $DVELDIR/toolchain/installer/wxFormBuilder/wxFormBuilder.desktop $DVELDIR/wxFormBuilder.desktop
