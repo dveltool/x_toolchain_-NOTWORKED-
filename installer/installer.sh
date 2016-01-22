@@ -54,7 +54,7 @@ cd wxFormBuilder
 svn checkout svn://svn.code.sf.net/p/wxformbuilder/code/3.x/trunk head
 cd head
 chmod 755 create_build_files4.sh
-./create_build_files4.sh
+./create_build_files4.sh --rpath=./
 cd build/3.0/gmake
 make config=release
 mkdir -pv $DVELDIR/toolchain/ide/wxFormBuilder/head
