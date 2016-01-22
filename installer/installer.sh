@@ -35,6 +35,9 @@ mkdir -pv $DVELDIR/toolchain/ide
 # ----------------------------------------------------------------------
 
 sh $DVELDIR/toolchain/installer/wxWidgets/linux_x86-64_shared_release.sh
+
+pause
+
 sh $DVELDIR/toolchain/installer/wxWidgets/linux_x86-64_shared_debug.sh
 
 # 020 - wxFormbuilder
