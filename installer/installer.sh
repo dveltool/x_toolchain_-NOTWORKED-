@@ -42,26 +42,25 @@ sh $DVELDIR/toolchain/installer/wxWidgets/linux_x86-64_shared_release.sh
 # ----------------------------------------------------------------------
 
 cd $DVELDIR/toolchain/build
-
-if [ -d "wxFormBuilder" ]; then
-	rm -rf "wxFormBuilder"
-fi
-
 PATH=/opt/dveltool/toolchain/x86_64/host/usr/x86_64-buildroot-linux-gnu/sysroot/usr/localx_/linux_x86-64_shared_release/bin:$PATH
 
-mkdir wxFormBuilder
-cd wxFormBuilder
-svn checkout svn://svn.code.sf.net/p/wxformbuilder/code/3.x/trunk head
-cd head
-chmod 755 create_build_files4.sh
-./create_build_files4.sh --rpath=/opt/dveltool/toolchain/x86_64/host/usr/x86_64-buildroot-linux-gnu/sysroot/usr/localx_/linux_x86-64_shared_release/lib
-cd build/3.0/gmake
-make config=release
-mkdir -pv $DVELDIR/toolchain/ide/wxFormBuilder
-yes | cp -Rf $DVELDIR/toolchain/build/wxFormBuilder/head/output $DVELDIR/toolchain/ide/wxFormBuilder
-# shortcut
-rm $DVELDIR/wxFormBuilder.desktop
-ln -s $DVELDIR/toolchain/installer/wxFormBuilder/wxFormBuilder.desktop $DVELDIR/wxFormBuilder.desktop
+if [ ! -d "wxFormBuilder" ]; then
+
+	mkdir wxFormBuilder
+	cd wxFormBuilder
+	svn checkout svn://svn.code.sf.net/p/wxformbuilder/code/3.x/trunk head
+	cd head
+	chmod 755 create_build_files4.sh
+	./create_build_files4.sh --rpath=/opt/dveltool/toolchain/x86_64/host/usr/x86_64-buildroot-linux-gnu/sysroot/usr/localx_/linux_x86-64_shared_release/lib
+	cd build/3.0/gmake
+	make config=release
+	mkdir -pv $DVELDIR/toolchain/ide/wxFormBuilder
+	yes | cp -Rf $DVELDIR/toolchain/build/wxFormBuilder/head/output $DVELDIR/toolchain/ide/wxFormBuilder
+	# shortcut
+	rm $DVELDIR/wxFormBuilder.desktop
+	ln -s $DVELDIR/toolchain/installer/wxFormBuilder/wxFormBuilder.desktop $DVELDIR/wxFormBuilder.desktop
+
+fi
 
 # 030 - eclipse
 # ----------------------------------------------------------------------
@@ -71,7 +70,7 @@ if [ ! -d "$DVELDIR/toolchain/ide/eclipse" ]; then
 	ECFN=eclipse-cpp-luna-SR2-linux-gtk-x86_64.tar.gz
 	wget -P $DVELDIR/toolchain/build -c http://mirror.atlas-it.de/eclipse/$ECFN
 	cd $DVELDIR/toolchain/ide
-	tar -xapvf $ECFN
+	tar -xapvf $DVELDIR/toolchain/build/$ECFN
 	# shortcut
 	rm $DVELDIR/eclipse.desktop
 	ln -s $DVELDIR/toolchain/installer/eclipse/eclipse.desktop $DVELDIR/eclipse.desktop
