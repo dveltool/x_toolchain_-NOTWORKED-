@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "now running $0" ; echo "..............................................................................................." ; echo ""
+
 export BOARD=x86_64
 export ABI=x86_64-buildroot-linux-gnu
 export WXVER=wxWidgets-3.0.2.tar.bz2
@@ -16,6 +18,6 @@ if [ ! -d "/opt/dveltool/toolchain/$BOARD/buildx_/wxWidgets-3.0.2" ]; then
 
 fi
 
-sh /opt/dveltool/toolchain/installer/wxWidgets/linux_x86-64_shared_debug.sh
-sh /opt/dveltool/toolchain/installer/wxWidgets/linux_x86-64_shared_release.sh
+/opt/dveltool/toolchain/installer/wxWidgets/linux_x86-64_shared_debug.sh
+/opt/dveltool/toolchain/installer/wxWidgets/linux_x86-64_shared_release.sh
 

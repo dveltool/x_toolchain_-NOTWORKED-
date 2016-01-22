@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "now running $0" ; echo "..............................................................................................." ; echo ""
+
 FILE=$0
 filename=$(basename "$FILE")
 extension="${filename##*.}"
@@ -8,8 +10,8 @@ BUILD=$filename
 
 if [ ! -d "/opt/dveltool/toolchain/$BOARD/buildx_/wxWidgets-3.0.2/buildx_/$BUILD"  ]; then
 
-	mkdir -pv wxWidgets-3.0.2/buildx_/$BUILD
-	cd wxWidgets-3.0.2/buildx_/$BUILD
+	mkdir -pv /opt/dveltool/toolchain/$BOARD/buildx_/wxWidgets-3.0.2/buildx_/$BUILD
+	cd /opt/dveltool/toolchain/$BOARD/buildx_/wxWidgets-3.0.2/buildx_/$BUILD
 
 	# configure
 	../../configure --with-gtk --prefix=/opt/dveltool/toolchain/$BOARD/host/usr/$ABI/sysroot/usr/localx_/$BUILD --with-libtiff=builtin --with-libjpeg=builtin --with-libpng=builtin --with-regex=builtin --with-zlib=builtin --with-expat=builtin LDFLAGS="-static-libstdc++ -static-libgcc" --enable-mediactrl

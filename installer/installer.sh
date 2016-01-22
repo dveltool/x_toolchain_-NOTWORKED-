@@ -6,6 +6,8 @@
 # by			: Dedy Yasriady
 #
 
+echo "now running $0" ; echo "..............................................................................................." ; echo ""
+
 DVELDIR=/opt/dveltool
 
 MYTS=$(date +%s)
@@ -34,8 +36,7 @@ mkdir -pv $DVELDIR/toolchain/ide
 # 010 - wxWidgets :: BUILD
 # ----------------------------------------------------------------------
 
-sh $DVELDIR/toolchain/installer/wxWidgets/linux_x86-64_shared_release.sh
-sh $DVELDIR/toolchain/installer/wxWidgets/linux_x86-64_shared_debug.sh
+$DVELDIR/toolchain/installer/wxWidgets/linux_x86-64_install.sh
 
 # 020 - wxFormbuilder
 # sourced from http://sourceforge.net/p/wxformbuilder/code/HEAD/tree/3.x/trunk/
