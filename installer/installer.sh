@@ -34,8 +34,8 @@ mkdir -pv $DVELDIR/toolchain/ide
 # 010 - wxWidgets :: BUILD
 # ----------------------------------------------------------------------
 
-# x86_64_shared // wxFormBuilder need this
 sh $DVELDIR/toolchain/installer/wxWidgets/linux_x86-64_shared_release.sh
+sh $DVELDIR/toolchain/installer/wxWidgets/linux_x86-64_shared_debug.sh
 
 # 020 - wxFormbuilder
 # sourced from http://sourceforge.net/p/wxformbuilder/code/HEAD/tree/3.x/trunk/
