@@ -57,8 +57,8 @@ chmod 755 create_build_files4.sh
 ./create_build_files4.sh --rpath=/opt/dveltool/toolchain/x86_64/host/usr/x86_64-buildroot-linux-gnu/sysroot/usr/localx_/linux_x86-64_shared_release/lib
 cd build/3.0/gmake
 make config=release
-mkdir -pv $DVELDIR/toolchain/ide/wxFormBuilder/head
-mv $DVELDIR/toolchain/build/wxFormBuilder/head/output $DVELDIR/toolchain/ide/wxFormBuilder/head
+mkdir -pv $DVELDIR/toolchain/ide/wxFormBuilder
+yes | cp -Rf $DVELDIR/toolchain/build/wxFormBuilder/head/output $DVELDIR/toolchain/ide/wxFormBuilder
 # shortcut
 rm $DVELDIR/wxFormBuilder.desktop
 ln -s $DVELDIR/toolchain/installer/wxFormBuilder/wxFormBuilder.desktop $DVELDIR/wxFormBuilder.desktop
