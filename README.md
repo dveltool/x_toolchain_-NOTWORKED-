@@ -7,14 +7,14 @@ REQUIREMENT:
 -------------------------
 Ubuntu:
 
-$ sudo apt-get install git subversion 
-$ sudo apt-get install openjdk-7-jdk
-$ sudo apt-get install build-essential
-$ sudo apt-get install libgtk2.0-dev 
-$ sudo apt-get install libxxf86vm-dev
-$ sudo apt-get install libgstreamer0.10-0 libgstreamer-plugins-base0.10-0 libgstreamer0.10-dev
-$ sudo apt-get install libghc-gstreamer-dev 
-$ sudo apt-get install libwebkitgtk-dev
+- sudo apt-get install git subversion 
+- sudo apt-get install openjdk-7-jdk
+- sudo apt-get install build-essential
+- sudo apt-get install libgtk2.0-dev 
+- sudo apt-get install libxxf86vm-dev
+- sudo apt-get install libgstreamer0.10-0 libgstreamer-plugins-base0.10-0 libgstreamer0.10-dev
+- sudo apt-get install libghc-gstreamer-dev 
+- sudo apt-get install libwebkitgtk-dev
 
 HOW TO INSTALL:
 -------------------------
